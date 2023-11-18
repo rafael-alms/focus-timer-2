@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: clamp(40%, 1% + 2vw, 62.5%);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #323238;
+    font-size: 12.6rem;
+
+    display: grid;
+    height: 100vh;
+    place-content: center;
+    text-align: center;
+}
+
+#app {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 19.2rem;
+}
+
+button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+#sounds-controls{
+    display: grid;
+    gap: 3.2rem;
+    grid-template-columns: 1fr 1fr;
+    width: fit-content;
+}
+
+/* controls */
+.running .btn-play,
+html:not(.running) .btn-pause,
+.forest-sound .forest-sound-off,
+html:not(.forest-sound) .forest-sound-on,
+.rain-sound .rain-sound-off,
+html:not(.rain-sound) .rain-sound-on,
+.coffee-shop-sound .coffee-shop-sound-off,
+html:not(.coffee-shop-sound) .coffee-shop-sound-on,
+.fireplace-sound .fireplace-sound-off,
+html:not(.fireplace-sound) .fireplace-sound-on {
+    display: none;
+}

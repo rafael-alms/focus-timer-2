@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Timer 2.0</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <script type="module" src="./src/main.js" defer></script>
+</head>
+<body>
+    <div id="app">
+        <div class="timer-wrapper">
+            <section id="timer">
+                <span id="minutes">25</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+            </section>
+    
+            <section id="controls">
+                <button data-action="toggleRunning" class="btn-play">
+                    <img src="assets/images/controls-icons/play.svg" alt="Iniciar contador">
+                </button>
+    
+                <button data-action="toggleRunning" class="btn-pause">
+                    <img src="assets/images/controls-icons/pause.svg" alt="Pausar contador">
+                </button>
+    
+                <button data-action="reset" class="btn-reset">
+                    <img src="assets/images/controls-icons/stop.svg" alt="Reiniciar contador">
+                </button>
+    
+                <button data-action="addFiveMinutes" class="btn-add5">
+                    <img src="assets/images/controls-icons/+.svg" alt="Adicionar 5 minutos">
+                </button>
+    
+                <button data-action="removeFiveMinutes" class="btn-remove5">
+                    <img src="assets/images/controls-icons/-.svg" alt="Remover 5 minutos">
+                </button>
+            </section>
+        </div>
+
+        <section id="sounds-controls">
+            <button data-action="toggleForestSound" class="forest-sound-off">
+                <img src="assets/images/sounds-icons/forest-off.svg" alt="Iniciar sons de floresta">
+            </button>
+            <button data-action="toggleForestSound" class="forest-sound-on">
+                <img src="assets/images/sounds-icons/forest-on.svg" alt="Parar sons de floresta">
+            </button>
+
+            <button data-action="toggleRainSound" class="rain-sound-off">
+                <img src="assets/images/sounds-icons/rain-off.svg" alt="Iniciar sons de chuva">
+            </button>
+            <button data-action="toggleRainSound" class="rain-sound-on">
+                <img src="assets/images/sounds-icons/rain-on.svg" alt="Parar sons de chuva">
+            </button>
+
+            <button data-action="toggleCoffeeShopSound" class="coffee-shop-sound-off">
+                <img src="assets/images/sounds-icons/coffee-shop-off.svg" alt="Iniciar sons de cafeteria">
+            </button>
+            <button data-action="toggleCoffeeShopSound" class="coffee-shop-sound-on">
+                <img src="assets/images/sounds-icons/coffee-shop-on.svg" alt="Parar sons de cafeteria">
+            </button>
+
+            <button data-action="toggleFireplaceSound" class="fireplace-sound-off">
+                <img src="assets/images/sounds-icons/fireplace-off.svg" alt="Iniciar sons de lareira">
+            </button>
+            <button data-action="toggleFireplaceSound" class="fireplace-sound-on">
+                <img src="assets/images/sounds-icons/fireplace-on.svg" alt="Parar sons de lareira">
+            </button>
+        </section>
+        
+    </div>
+</body>
+</html>
