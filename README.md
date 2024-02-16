@@ -1,6 +1,6 @@
 # FocusTimer - Versão 2.0 ⏲️
 
-# 💻 Sobre o desafio
+## 💻 Sobre o desafio
 
 Desafio do curso Explorer da Rocketseat, utilizando modularização em JavaScript. Neste desafio foi criado um timer com as seguintes funcionalidades:
 
@@ -16,3 +16,7 @@ Além disso, possui botões de música. São quatro cards, cada um com um som di
 - Chuva
 - Cafeteria
 - Lareira
+
+## Deploy da Aplicação :dash:
+
+> Link do deploy da aplicação, realizado pelo GitHub Pages: https://rafael-alms.github.io/focus-timer-2/
